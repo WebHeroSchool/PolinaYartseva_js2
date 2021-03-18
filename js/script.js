@@ -2,10 +2,17 @@ let num;
 
 let score;
 
-const object1 = {question1=''}
+const array = [
+    { question1 : 'first question',
+    correctAnswer : 'a'},
+    {question2 : 'second question',
+    correctAnswer : 'b'},
+    {question3 : 'third question',
+    correctAnswer : 'c'},
+    {question4 : 'fourth question',
+    correctAnswer : 'c'},
+]
 
-const object2 = {question2=''}
+const filter = array.filter((item) => item.correctAnswer === 'c')
 
-const object3 = {question3=''}
-
-const object4 = {question4=''}
+console.log(filter);
